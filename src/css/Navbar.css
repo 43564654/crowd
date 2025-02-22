@@ -1,0 +1,27 @@
+header {
+    position: fixed; /* 或者 'fixed'，如果你希望它在页面滚动时保持在顶部 */
+    z-index: 10; /* 确保这个值高于其他元素 */
+  }
+
+  .font-kai {
+    font-family: "楷体", "KaiTi", serif;
+  }
+
+/* 自定义箭头样式 */
+.arrow-icon {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-left: 2px solid white;
+  border-bottom: 2px solid white;
+  transform: rotate(45deg);
+  transition: transform 0.3s ease;
+}
+
+/* 悬停时箭头旋转 */
+.relative:hover .arrow-icon {
+  transform: rotate(315deg); /* 旋转为指向下方 */
+}
+
+
+  
